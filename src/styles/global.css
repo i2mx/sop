@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+* {
+  font-family: system-ui;
+}
+
+h1 {
+  height: 100px;
+  font-family: Lilita One;
+  font-weight: normal;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  font-size: 50px;
+  text-align: center;
+  transition: 0.3s font-size;
+  text-shadow: #3b1a26 10px 10px 12px;
+}
+
+h1:hover {
+  font-size: 65px;
+}
+
+html,
+body {
+  overflow: hidden;
+  cursor: url("cursor.png") 1 1, default;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  inset: 0;
+  background-color: black;
+  background-image: linear-gradient(45deg, #3b1a26, #03c0ff29),
+    repeating-radial-gradient(
+      circle at 50% 100%,
+      transparent 0%,
+      #3a02257f 60%,
+      rgba(227, 11, 90, 0.648) 60%,
+      black 120%
+    );
+  height: 100dvh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+  color: hotpink;
+}
+
+.content {
+  width: 400px;
+}
+
+.right > img {
+  right: 0;
+  bottom: 0;
+  float: right;
+  position: fixed;
+  width: 600px;
+  height: auto;
+  transition: 0.3s width cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.right > img:hover {
+  width: 660px;
+}
+
+@media (max-width: 1365px) {
+  .right {
+    visibility: hidden !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .left {
+    visibility: hidden !important;
+  }
+}
+
+
+@media (max-width: 300px) {
+  * {
+    visibility: hidden;
+  }
+}
+
+.left {
+  left: 50px;
+  top: 50px;
+  float: left;
+  position: fixed;
+  padding: 20px;
+  border-radius: 10px;
+  /* background-color: #221325; */
+  /* box-shadow: 10px 10px 10px #190c1165; */
+}
+
+.bottom {
+  position: fixed;
+  left: 50px;
+  bottom: 50px;
+  background-color: #3b1a26;
+}
+
+.bottom > a {
+  color: hotpink !important;
+  font-size: 20px;
+  transition: 0.3s color, 0.3s font-size cubic-bezier(0.86, 0, 0.07, 1);
+  text-decoration: none;
+}
+
+.bottom:hover > a {
+  font-size: 25px;
+  color: rgb(255, 188, 221) !important;
+}
+
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}

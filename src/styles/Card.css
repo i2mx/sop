@@ -1,0 +1,62 @@
+div{
+  height: 450px;
+  z-index: -10000;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #130a0da2;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+img{
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+  transition: 3s left;
+}
+
+button{
+  margin: 0px 3px;
+  font-weight: 500;
+  padding: 1.2em;
+  width: 10rem;
+  border: 0;
+  transition: 0.3s background-color cubic-bezier(0.075, 0.82, 0.165, 1);
+  border-radius: 4px;
+  box-shadow: 10px 10px 10px #130a0da2;
+}
+
+
+button.pass{
+  background-color: red;
+}
+
+button.smash{
+  background-color: greenyellow;
+}
+
+button:hover {
+  background-color: hotpink;
+}
+
+button:active {
+  background-color: rgb(255, 188, 221);
+}
+
+.button_container{
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+   text-align: center;
+}
+
+li {
+  padding: 1em;
+  text-decoration: none;
+  list-style: disc;
+}
+
+hr {
+  border-color: hotpink;
+}
